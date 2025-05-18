@@ -123,6 +123,13 @@ vim.o.showmode = false
 -- Enable break indent
 vim.o.breakindent = true
 
+-- configure folding
+vim.o.foldmethod = 'indent'
+vim.o.foldlevel = 10
+
+-- Disable line wrapping
+vim.o.wrap = false
+
 -- Save undo history
 vim.o.undofile = true
 
@@ -1015,7 +1022,7 @@ require('lazy').setup({
   --
   -- require 'kickstart.plugins.debug',
   require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
+  require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
   -- require 'kickstart.plugins.neo-tree',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
